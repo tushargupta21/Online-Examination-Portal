@@ -100,7 +100,7 @@ const Questions = (props) => {
                                                     <label htmlFor="appt">Questions </label>
                                                 </div>
                                                 <div className="col-md-3 mb-3">
-                                                    <label htmlFor="appt">Total Marks: </label>
+                                                    <label htmlFor="appt">Total Marks : </label>
                                                     <input
                                                         className="mx-3 col-lg-5 "
                                                         type="text"
@@ -111,7 +111,7 @@ const Questions = (props) => {
                                                     />
                                                 </div>
                                                 <div className="col-md-3 mb-3">
-                                                    <label htmlFor="appt">Total Time: </label>
+                                                    <label htmlFor="appt">Total Time : </label>
                                                     <input
                                                         className="mx-3 col-lg-5 "
                                                         type="text"
@@ -122,8 +122,9 @@ const Questions = (props) => {
                                                     />
                                                 </div>
                                                 <div className="col-md-2 mb-2">
+                                                <label>Correct Option </label>
                                                     <select value={formData.correctoption} onChange={handleChange} name="correctoption" className="custom-select custom-select-sm">
-                                                        <option disabled>Correct Option</option>
+                                                        {/* <option disabled>Correct Option</option> */}
                                                         <option value="1">1</option>
                                                         <option value="2">2</option>
                                                         <option value="3">3</option>
@@ -137,11 +138,11 @@ const Questions = (props) => {
                                                 name="ques"
                                                 id="ques"
                                                 onChange={handleChange}
-                                                placeholder="question"
+                                                placeholder="Type your question here"
                                             />
                                         </div>
                                         <div className="form-group">
-                                            <label htmlFor="exampleInputPassword1">Option1</label>
+                                            <label htmlFor="exampleInputPassword1">Option 1</label>
                                             <input
                                                 type="text"
                                                 className="form-control"
@@ -152,7 +153,7 @@ const Questions = (props) => {
                                             />
                                         </div>
                                         <div className="form-group">
-                                            <label htmlFor="exampleInputPassword1">Option2</label>
+                                            <label htmlFor="exampleInputPassword1">Option 2</label>
                                             <input
                                                 type="text"
                                                 id="opt2"
@@ -163,7 +164,7 @@ const Questions = (props) => {
                                             />
                                         </div>
                                         <div className="form-group">
-                                            <label htmlFor="exampleInputPassword1">Option3</label>
+                                            <label htmlFor="exampleInputPassword1">Option 3</label>
                                             <input
                                                 type="text"
                                                 id="opt3"
@@ -174,7 +175,7 @@ const Questions = (props) => {
                                             />
                                         </div>
                                         <div className="form-group">
-                                            <label htmlFor="exampleInputPassword1">Option4</label>
+                                            <label htmlFor="exampleInputPassword1">Option 4</label>
                                             <input
                                                 type="text"
                                                 id="opt4"
